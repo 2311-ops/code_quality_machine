@@ -1,0 +1,148 @@
+13:36:26 [INFO] =======================================================
+13:36:26 [INFO]   Phase 1: Code Quality Dataset Collection
+13:36:26 [INFO] =======================================================
+13:36:26 [WARNING] No token provided — limited to 60 requests/hour
+13:36:26 [INFO] 
+[Step 1/4] Scraping GitHub repositories...
+13:36:26 [INFO] Searching: 'language:python stars:>200 size:<50000'
+13:41:40 [INFO] =======================================================
+13:41:40 [INFO]   Phase 1: Code Quality Dataset Collection
+13:41:40 [INFO] =======================================================
+13:41:51 [INFO] =======================================================
+13:41:51 [INFO]   Phase 1: Code Quality Dataset Collection
+13:41:51 [INFO] =======================================================
+13:43:30 [INFO] =======================================================
+13:43:30 [INFO]   Phase 1: Code Quality Dataset Collection
+13:43:30 [INFO] =======================================================
+13:43:31 [INFO] Authenticated as '2311-ops' — 4977 API requests remaining
+13:43:31 [INFO] 
+[Step 1/4] Scraping GitHub repositories...
+13:43:31 [INFO] Searching: 'language:python stars:>200 size:<50000'
+13:46:59 [INFO] Searching: 'language:python stars:>500 topic:data-science'
+13:58:09 [INFO] Searching: 'language:python stars:>300 topic:web'
+14:10:59 [INFO] Searching: 'language:python stars:>300 topic:cli'
+14:16:00 [INFO] Scraping complete. Total files collected: 1007
+14:16:00 [INFO] 
+[Step 2/4] Deduplicating...
+14:16:00 [INFO] 
+[Step 3/4] Computing quality metrics and labels...
+14:16:00 [INFO] Labeling 1007 files...
+14:29:10 [INFO] Labeling 2 files...
+14:29:10 [WARNING]   Dropping 1 files that could not be parsed
+14:29:10 [INFO]   Label distribution: {'good': 1}
+19:32:27 [INFO] =======================================================
+19:32:27 [INFO]   Phase 1: Code Quality Dataset Collection
+19:32:27 [INFO] =======================================================
+19:32:28 [INFO] Authenticated as '2311-ops' - 4996 API requests remaining
+19:32:28 [INFO] 
+[Step 1/4] Scraping GitHub repositories...
+19:32:28 [INFO] Searching: 'language:python stars:>200 size:<50000'
+19:32:29 [INFO]   [1/10] Scraping public-apis/public-apis *424462
+19:32:35 [INFO]     -> collected 4 files (total so far: 4)
+19:32:37 [INFO]   [2/10] Scraping EbookFoundation/free-programming-books *385637
+19:32:43 [INFO]     -> collected 1 files (total so far: 5)
+19:32:45 [INFO]   [3/10] Scraping donnemartin/system-design-primer *343123
+19:33:02 [INFO]     -> collected 13 files (total so far: 18)
+19:33:03 [INFO]   [4/10] Scraping vinta/awesome-python *292871
+19:33:11 [INFO]     -> collected 6 files (total so far: 24)
+19:33:12 [INFO]   [5/10] Scraping TheAlgorithms/Python *219712
+19:33:53 [INFO]     -> collected 30 files (total so far: 54)
+19:33:55 [INFO]   [6/10] Scraping AUTOMATIC1111/stable-diffusion-webui *162418
+19:34:27 [INFO]     -> collected 30 files (total so far: 84)
+19:34:28 [INFO]   [7/10] Scraping 521xueweihan/HelloGitHub *151630
+19:34:34 [INFO]     -> collected 2 files (total so far: 86)
+19:34:35 [INFO]   [8/10] Scraping anthropics/skills *119506
+19:35:19 [INFO]     -> collected 30 files (total so far: 116)
+19:35:21 [INFO]   [9/10] Scraping microsoft/markitdown *111066
+19:35:48 [INFO]     -> collected 30 files (total so far: 146)
+19:35:49 [INFO]   [10/10] Scraping deepseek-ai/DeepSeek-V3 *102658
+19:35:55 [INFO]     -> collected 5 files (total so far: 151)
+19:35:56 [INFO] Searching: 'language:python stars:>500 topic:data-science'
+19:35:58 [INFO]   [1/10] Scraping scikit-learn/scikit-learn *65851
+19:36:22 [INFO]     -> collected 30 files (total so far: 181)
+19:36:23 [INFO]   [2/10] Scraping keras-team/keras *64016
+19:36:46 [INFO]     -> collected 30 files (total so far: 211)
+19:36:47 [INFO]   [3/10] Scraping Asabeneh/30-Days-Of-Python *61219
+19:37:23 [INFO]     -> collected 11 files (total so far: 222)
+19:37:25 [INFO]   [4/10] Scraping pandas-dev/pandas *48527
+19:38:01 [INFO]     -> collected 30 files (total so far: 252)
+19:38:03 [INFO]   [5/10] Scraping apache/airflow *45079
+19:40:35 [INFO]     -> collected 30 files (total so far: 282)
+19:40:36 [INFO]   [6/10] Scraping streamlit/streamlit *44256
+19:41:05 [INFO]     -> collected 30 files (total so far: 312)
+19:41:06 [INFO]   [7/10] Scraping gradio-app/gradio *42352
+19:45:01 [INFO]     -> collected 30 files (total so far: 342)
+19:45:03 [INFO]   [8/10] Scraping ray-project/ray *42177
+19:46:14 [INFO]     -> collected 30 files (total so far: 372)
+19:46:16 [INFO]   [9/10] Scraping explosion/spaCy *33478
+19:46:49 [INFO]     -> collected 30 files (total so far: 402)
+19:46:50 [INFO]   [10/10] Scraping eriklindernoren/ML-From-Scratch *31318
+19:47:09 [INFO]     -> collected 30 files (total so far: 432)
+19:47:11 [INFO] Searching: 'language:python stars:>300 topic:web'
+19:47:12 [INFO]   [1/10] Scraping fastapi/fastapi *97346
+19:48:20 [INFO]     -> collected 30 files (total so far: 462)
+19:48:22 [INFO]   [2/10] Scraping django/django *87283
+19:51:01 [INFO]     -> collected 30 files (total so far: 492)
+19:51:03 [INFO]   [3/10] Scraping httpie/cli *37950
+19:51:29 [INFO]     -> collected 30 files (total so far: 522)
+19:51:31 [INFO]   [4/10] Scraping nicolargo/glances *32284
+19:52:00 [INFO]     -> collected 30 files (total so far: 552)
+19:52:01 [INFO]   [5/10] Scraping reflex-dev/reflex *28296
+19:53:19 [INFO]     -> collected 30 files (total so far: 582)
+19:53:21 [INFO]   [6/10] Scraping sanic-org/sanic *18640
+19:53:48 [INFO]     -> collected 30 files (total so far: 612)
+19:53:49 [INFO]   [7/10] Scraping flet-dev/flet *15932
+19:58:06 [INFO]     -> collected 30 files (total so far: 642)
+19:58:07 [INFO]   [8/10] Scraping qutebrowser/qutebrowser *11431
+19:58:44 [INFO]     -> collected 30 files (total so far: 672)
+19:58:46 [INFO]   [9/10] Scraping django-cms/django-cms *10642
+19:59:21 [INFO]     -> collected 30 files (total so far: 702)
+19:59:22 [INFO]   [10/10] Scraping falconry/falcon *9800
+19:59:56 [INFO]     -> collected 30 files (total so far: 732)
+19:59:58 [INFO] Searching: 'language:python stars:>300 topic:cli'
+19:59:59 [INFO]   [1/10] Scraping yt-dlp/yt-dlp *157364
+20:00:21 [INFO]     -> collected 30 files (total so far: 762)
+20:00:22 [INFO]   [2/10] Scraping sherlock-project/sherlock *81269
+20:00:35 [INFO]     -> collected 15 files (total so far: 777)
+20:00:37 [INFO]   [3/10] Scraping OpenHands/OpenHands *71398
+20:01:41 [INFO]     -> collected 30 files (total so far: 807)
+20:01:43 [INFO]   [4/10] Scraping ultralytics/ultralytics *56089
+20:02:29 [INFO]     -> collected 30 files (total so far: 837)
+20:02:30 [INFO]   [5/10] Scraping Aider-AI/aider *43498
+20:02:51 [INFO]     -> collected 30 files (total so far: 867)
+20:02:53 [INFO]   [6/10] Scraping chubin/cheat.sh *41241
+20:03:16 [INFO]     -> collected 30 files (total so far: 897)
+20:03:18 [INFO]   [7/10] Scraping Textualize/textual *35456
+20:03:55 [INFO]     -> collected 30 files (total so far: 927)
+20:03:57 [INFO]   [8/10] Scraping tqdm/tqdm *31116
+20:04:17 [INFO]     -> collected 30 files (total so far: 957)
+20:04:19 [INFO]   [9/10] Scraping FujiwaraChoki/MoneyPrinterV2 *29883
+20:04:33 [INFO]     -> collected 20 files (total so far: 977)
+20:04:35 [INFO]   [10/10] Scraping google/python-fire *28171
+20:04:56 [INFO]     -> collected 30 files (total so far: 1007)
+20:04:58 [INFO] Scraping complete. Total files collected: 1007
+20:04:58 [INFO] Raw data saved -> output/raw_code.csv  (1007 rows)
+20:04:58 [INFO] 
+[Step 2/4] Deduplicating...
+20:04:58 [INFO] Deduplication: 1007 -> 1007 files (0 removed)
+20:04:58 [INFO] 
+[Step 3/4] Computing quality metrics and labels...
+20:04:58 [INFO] Labeling 1007 files...
+20:05:14 [WARNING]   Dropping 1 files that could not be parsed
+20:05:14 [INFO]   Label distribution: {'good': 448, 'medium': 412, 'bad': 146}
+20:05:14 [INFO] 
+[Step 4/4] Saving labeled dataset...
+20:05:14 [INFO] 
+=======================================================
+20:05:14 [INFO]   Phase 1 Complete
+20:05:14 [INFO] =======================================================
+20:05:14 [INFO]   Total files scraped    : 1007
+20:05:14 [INFO]   After deduplication     : 1007
+20:05:14 [INFO]   After labeling          : 1006
+20:05:14 [INFO]     good    :  448 files  (44.5%)
+20:05:14 [INFO]     medium  :  412 files  (41.0%)
+20:05:14 [INFO]     bad     :  146 files  (14.5%)
+20:05:14 [INFO] 
+  Raw CSV    -> output/raw_code.csv
+20:05:14 [INFO]   Labeled CSV -> output/labeled_dataset.csv
+20:05:14 [INFO]   Log file   -> output/scrape.log
