@@ -1,0 +1,12 @@
+{
+  "model_name": "CodeQualityCNN",
+  "f1": 0.9551209652169291,
+  "accuracy": 0.9554455445544554,
+  "n_features": 226,
+  "n_classes": 3,
+  "labels": [
+    "bad",
+    "good",
+    "medium"
+  ]
+}
