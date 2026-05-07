@@ -71,4 +71,3 @@ python main.py
 ## Documentation
 
 - [`CodeQualityAssessor_Documentation.docx`](CodeQualityAssessor_Documentation.docx) is the main project documentation
-- [`docs/project_rubric.md`](docs/project_rubric.md) contains the project evaluation rubric captured from the reference image
