@@ -1,6 +1,6 @@
 # Code Quality Machine
 
-An end-to-end code-quality pipeline that scrapes Python repositories from GitHub, deduplicates the results, computes static-analysis features, trains ML models, and exposes a Phase 4 inference helper for raw Python code.
+An end-to-end code-quality pipeline that scrapes Python repositories from GitHub, deduplicates the results, computes static-analysis features, and trains ML models.
 
 ## What it does
 
@@ -22,7 +22,6 @@ An end-to-end code-quality pipeline that scrapes Python repositories from GitHub
 - `Labeler.py` computes metrics and quality labels
 - `feature_engineering.ipynb` builds the feature matrix and train/test splits
 - `ML_modeling.ipynb` trains and evaluates the ML models
-- `phase4_inference.py` loads the saved model and returns a quality report for raw code
 - `Logger.py` sets up logging
 - `config.py` stores pipeline settings and token loading
 
@@ -52,30 +51,10 @@ python main.py
 - `output/labeled_dataset.csv` contains the final labeled dataset
 - `output/features_dataset.csv` contains the full engineered feature matrix
 - `output/model_cnn.keras` contains the saved 1D CNN model
-- `output/model_metadata.json` contains the saved model metadata used by Phase 4
+- `output/model_metadata.json` contains the saved model metadata
 - `output/scaler.json` stores the feature scaling parameters
 - `output/tfidf_vocab.json` stores the TF-IDF vocabulary
 - `output/scrape.log` contains the run log
-
-## Phase 4 Inference
-
-Use `phase4_inference.py` when you need to score a raw Python snippet and return a JSON-ready quality report:
-
-```python
-from phase4_inference import analyze_python_code_quality
-
-report = analyze_python_code_quality("def add(a, b):\n    return a + b\n")
-print(report["prediction"]["label"])
-print(report["quality_report"]["summary"])
-```
-
-The report includes:
-
-- predicted label and confidence
-- class probabilities
-- extracted metrics
-- suggestions and a score
-- model metadata from `output/model_metadata.json`
 
 ## Security
 
