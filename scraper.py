@@ -27,7 +27,7 @@ def _get_core_rate(g: Github):
     """
     #ask github what is my current rate limit status
     overview = g.get_rate_limit()
-    #
+    
     resources = getattr(overview, "resources", None)
     if resources is not None and getattr(resources, "core", None) is not None:
         return resources.core
@@ -144,7 +144,7 @@ def _get_python_files(repo, g: Github) -> list[dict]:
     return collected
 
 #main function to run all search queries and collect Python files,
-#  while respecting the max repos per query and avoiding duplicates across queries
+#while respecting the max repos per query and avoiding duplicates across queries
 def scrape_all(g: Github) -> list[dict]:
     """
     Run all search queries and collect Python files.

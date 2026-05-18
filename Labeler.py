@@ -62,7 +62,7 @@ def _compute_metrics(code: str) -> dict | None:
     except Exception:
         return None
 
-
+#function to assign a quality label based on MI and average CC, using the defined thresholds
 def _assign_label(mi: float, avg_cc: float) -> str:
     if mi >= MI_GOOD_THRESHOLD and avg_cc <= CC_GOOD_THRESHOLD:
         return "good"
@@ -70,7 +70,8 @@ def _assign_label(mi: float, avg_cc: float) -> str:
         return "bad"
     return "medium"
 
-
+#main function to label a DataFrame of code files, 
+# adding metric columns and a quality_label column
 def label_dataframe(df: pd.DataFrame) -> pd.DataFrame:
     """
     Adds metric columns and a quality_label column to df.
@@ -81,7 +82,7 @@ def label_dataframe(df: pd.DataFrame) -> pd.DataFrame:
     metrics_rows = []
     kept_indexes = []
     failed = 0
-
+    #iterate over each row in the DataFrame, compute metrics for the code, and keep track of which rows succeed or fail
     for index, row in df.iterrows():
         metrics = _compute_metrics(row["code"])
         if metrics is None:
@@ -92,7 +93,7 @@ def label_dataframe(df: pd.DataFrame) -> pd.DataFrame:
 
     if failed:
         log.warning(f"  Dropping {failed} files that could not be parsed")
-
+    # If all files fail to parse, return an empty DataFrame with the expected columns
     if not metrics_rows:
         log.warning("  No files could be parsed; returning empty labeled dataset")
         empty = df.iloc[0:0].copy()
@@ -100,6 +101,7 @@ def label_dataframe(df: pd.DataFrame) -> pd.DataFrame:
             "mi_score",
             "avg_cc",
             "max_cc",
+            #loc = lines of code, lloc = logical lines of code, sloc = source lines of code
             "loc",
             "lloc",
             "sloc",
