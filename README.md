@@ -56,6 +56,21 @@ python main.py
 - `output/tfidf_vocab.json` stores the TF-IDF vocabulary
 - `output/scrape.log` contains the run log
 
+## UI
+
+Run the Streamlit UI:
+
+```bash
+streamlit run app.py
+```
+
+The app provides:
+
+- a dashboard with project statistics and screenshots
+- a code analysis workflow for pasted or uploaded Python files
+- a model comparison and artifact download page
+- a short project walkthrough covering all three phases
+
 ## Security
 
 - Do not commit `.env`
