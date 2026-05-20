@@ -28,7 +28,9 @@ def _load_dotenv(path: Path) -> None:
 
 _load_dotenv(Path(__file__).with_name(".env"))
 
-GITHUB_TOKEN =  os.getenv("github_token", "")
+# Prefer the standard Streamlit Cloud / GitHub secret name, but keep backward
+# compatibility with the older lowercase key used in local .env files.
+GITHUB_TOKEN = os.getenv("GITHUB_TOKEN", os.getenv("github_token", "")).strip()
 
 # -- Search Filters --
 SEARCH_QUERIES = [

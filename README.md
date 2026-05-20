@@ -71,6 +71,21 @@ The app provides:
 - a model comparison and artifact download page
 - a short project walkthrough covering all three phases
 
+## Deploying to Streamlit Cloud
+
+This repository is ready to publish on Streamlit Community Cloud.
+
+1. Push the project to GitHub.
+2. In Streamlit Cloud, create a new app and point it at this repository.
+3. Set the main file path to `app.py`.
+4. Add `GITHUB_TOKEN` as an app secret only if you want the scraping pipeline to use the GitHub API from the deployed environment.
+
+The deployed app will open directly with:
+
+```bash
+streamlit run app.py
+```
+
 ## Security
 
 - Do not commit `.env`

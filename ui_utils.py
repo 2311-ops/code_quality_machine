@@ -149,6 +149,11 @@ def get_artifact_paths(output_dir: Path = OUTPUT_DIR) -> list[Path]:
         "encoder.json",
         "scaler.json",
         "tfidf_vocab.json",
+        "best_model.pkl",
+        "model_rf.pkl",
+        "model_gbm.pkl",
+        "model_lstm.keras",
+        "model_cnn.keras",
         "best_model_cnn.keras",
         "model_metadata.json",
     ]
