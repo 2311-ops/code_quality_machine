@@ -33,6 +33,9 @@ An end-to-end code-quality pipeline that scrapes Python repositories from GitHub
 pip install -r requirements.txt
 ```
 
+TensorFlow is only needed for the training notebooks and saved model work, not for the Streamlit UI.
+If you want to rerun the deep-learning notebook locally, install it separately in that environment.
+
 2. Add your GitHub token to `.env`:
 
 ```env
